@@ -5,7 +5,7 @@ const ContactPage = () => {
 	const titleCTX = useContext(TitleContext)
 
 	useEffect(() => {
-		titleCTX.changeTitle(TITLE_ACTION.CHANGE_TITLE, 'Contact')
+		titleCTX.changeTitle(TITLE_ACTION.CHANGE_TITLE, 'Contact', '/contact')
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 	return (

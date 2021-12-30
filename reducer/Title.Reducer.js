@@ -7,13 +7,14 @@ export const TITLE_ACTION = {
 export const TitleContext = createContext()
 
 const TitleInitState = {
-	name: null
+	name: null,
+	path: null
 }
 
 const Reducer = (state, action) => {
 	switch (action.type) {
 		case TITLE_ACTION.CHANGE_TITLE:
-			return { ...state, name: action.content }
+			return { ...state, name: action.content, path: action.path }
 
 		default:
 			return state
@@ -25,7 +26,7 @@ const TitleReducer = props => {
 	const [store, dispatch] = useReducer(Reducer, TitleInitState)
 	const titleProps = {
 		state: store,
-		changeTitle: (type, content) => dispatch({ type, content })
+		changeTitle: (type, content, path) => dispatch({ type, content, path })
 	}
 
 	return (

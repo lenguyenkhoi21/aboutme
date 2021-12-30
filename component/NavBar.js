@@ -18,21 +18,15 @@ const NavBar = () => {
 			path: '/projects'
 		},
 		{
-			content: 'Skill',
-			status: false,
-			pos: 2,
-			path: '/skill'
-		},
-		{
 			content: 'About Me',
 			status: false,
-			pos: 3,
+			pos: 2,
 			path: '/aboutme'
 		},
 		{
 			content: 'Contact',
 			status: false,
-			pos: 4,
+			pos: 3,
 			path: '/contact'
 		}
 	])
@@ -46,7 +40,7 @@ const NavBar = () => {
 	return (
 		<>
 			<nav className={'nav-NavBar-bg'}>
-				<div className={'align-page div-NavBar-container'}>
+				<div className={'align-page'}>
 					<ul className={'nav-NavBar-md'}>
 						{navBar.map((item, key) => (
 							<React.Fragment key={key}>
@@ -66,10 +60,6 @@ const NavBar = () => {
 					clear: both;
 				}
 
-				.div-NavBar-container {
-					float: right;
-				}
-
 				.nav-NavBar-md {
 					display: flex;
 				}
@@ -83,6 +73,9 @@ const NavBar = () => {
 					height: 56px;
 					position: sticky;
 					width: 100vw;
+					display: flex;
+					justify-content: right;
+					align-items: center;
 				}
 
 				@media only screen and (max-width: 767px) {

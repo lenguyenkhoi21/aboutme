@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import TitleReducer from '../reducer/Title.Reducer'
 import Metadata from '../component/Metadata'
 import NavBar from '../component/NavBar'
+import Footer from '../component/Footer'
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
 			<Metadata />
 			<NavBar />
 			<Component {...pageProps} />
+			<Footer />
 		</TitleReducer>
 	)
 }

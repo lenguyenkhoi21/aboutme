@@ -1,11 +1,12 @@
 import { TITLE_ACTION, TitleContext } from '../reducer/Title.Reducer'
 import { useContext, useEffect } from 'react'
+import TweenImage from '../component/index/TweenImage'
 
 export default function HomePage() {
 	const titleCTX = useContext(TitleContext)
 
 	useEffect(() => {
-		titleCTX.changeTitle(TITLE_ACTION.CHANGE_TITLE, 'Khoi Le Nguyen')
+		titleCTX.changeTitle(TITLE_ACTION.CHANGE_TITLE, 'Khoi Le Nguyen', '/')
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
@@ -31,13 +32,13 @@ export default function HomePage() {
 											{' '}
 											Spring Boot
 										</span>,{' '}
-										<span className={'span-HomePage-color'}> NodeJS </span>
+										<span className={'span-HomePage-color'}> React </span>
 									</p>
 									<p className={'p-HomePage-favourite'}>
 										{' '}
 										and <span className={'span-HomePage-color'}>
 											{' '}
-											React
+											NodeJS
 										</span>.{' '}
 									</p>
 								</div>
@@ -45,15 +46,29 @@ export default function HomePage() {
 								<div>
 									<p className={'p-HomePage-favourite'}>
 										{' '}
-										I{`'`}m interesting in Cloud, Go and
+										I{`'`}m interesting in{' '}
+										<span className={'span-HomePage-color'}>Cloud</span>,{' '}
+										<span className={'span-HomePage-color'}>Go</span> and
 									</p>
-									<p className={'p-HomePage-favourite'}> Microservices. </p>
+									<p className={'p-HomePage-favourite'}>
+										{' '}
+										<span className={'span-HomePage-color'}>Microservices</span>
+										.{' '}
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className={'col-md-6'}>
-						<div className={'div-HomePage-left'}></div>
+						<div className={'div-HomePage-left'}>
+							<div className='row g-0'>
+								<div className='col-md-6' />
+								<div className='col-md-5 div-HomePage-imgTop'>
+									<TweenImage />
+								</div>
+								<div className='col-md-1' />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -64,8 +79,10 @@ export default function HomePage() {
 					}
 
 					.span-HomePage-color {
-					  font-weight: bold;
+						font-family: Nunito-Bold;
+						font-weight: bold;
 						color: #ffc637;
+						line-height: 150%;
 					}
 
 					.p-HomePage-intro {
@@ -80,10 +97,15 @@ export default function HomePage() {
 						font-weight: normal;
 						font-size: 24px;
 						color: #828282;
+						line-height: 150%;
 					}
 
 					.div-HomePage-Right {
 						margin-top: 55px;
+					}
+
+					.div-HomePage-imgTop {
+						margin-top: 60px;
 					}
 
 					.div-HomePage-left {

@@ -5,7 +5,7 @@ const AboutMePage = () => {
 	const titleCTX = useContext(TitleContext)
 
 	useEffect(() => {
-		titleCTX.changeTitle(TITLE_ACTION.CHANGE_TITLE, 'About me')
+		titleCTX.changeTitle(TITLE_ACTION.CHANGE_TITLE, 'About me', 'aboutme')
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 

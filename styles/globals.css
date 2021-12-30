@@ -62,7 +62,13 @@ table {
 @font-face {
   font-family: Nunito;
   /*noinspection CssUnknownTarget*/
-  src: url("/font/Ninito/Nunito-Regular.ttf");
+  src: url("/font/Nutito/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  /*noinspection CssUnknownTarget*/
+  src: url("/font/Ninito/Nunito-Bold.ttf");
 }
 
 /*Align page*/
