@@ -33,4 +33,4 @@ const NavBarResponsive = ({ navBar, updateNav }) => {
 	)
 }
 
-export default NavBarResponsive
+export default React.memo(NavBarResponsive)

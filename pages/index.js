@@ -18,10 +18,7 @@ export default function HomePage() {
 						<div>
 							<div className={'div-HomePage-intro'}>
 								<p className={'p-HomePage-intro'}> Hi, I{`'`}m Khoi. </p>
-								<p className={'p-HomePage-intro'}>
-									{' '}
-									A Passionate Back-end Developer !{' '}
-								</p>
+								<p className={'p-HomePage-intro'}> A Back-end Developer ! </p>
 							</div>
 							<div>
 								<div className={'div-HomePage-intro'}>
@@ -79,7 +76,7 @@ export default function HomePage() {
 					}
 
 					.span-HomePage-color {
-						font-family: Nunito-Bold;
+						font-family: Nunito;
 						font-weight: bold;
 						color: #ffc637;
 						line-height: 150%;
@@ -87,7 +84,7 @@ export default function HomePage() {
 
 					.p-HomePage-intro {
 						font-family: PlayfairDisplay-Bold;
-						font-size: 60px;
+						font-size: 64px;
 						line-height: 120%;
 						font-weight: bold;
 					}

@@ -50,25 +50,19 @@ table {
 @font-face {
   font-family: Raleway-SemiBold;
   /*noinspection CssUnknownTarget*/
-  src: url("/font/Raleway/Raleway-SemiBold.ttf");
+  src: url("/font/Raleway/Raleway-SemiBold.ttf") format('truetype');
 }
 
 @font-face {
   font-family: PlayfairDisplay-Bold;
   /*noinspection CssUnknownTarget*/
-  src: url("/font/Raleway/PlayfairDisplay-Bold.ttf");
+  src: url("/font/Playfair/PlayfairDisplay-Black.ttf") format('truetype');
 }
 
 @font-face {
   font-family: Nunito;
   /*noinspection CssUnknownTarget*/
-  src: url("/font/Nutito/Nunito-Regular.ttf");
-}
-
-@font-face {
-  font-family: Nunito-Bold;
-  /*noinspection CssUnknownTarget*/
-  src: url("/font/Ninito/Nunito-Bold.ttf");
+  src: url("/font/Nutito/Nunito-SemiBold.ttf") format('truetype');
 }
 
 /*Align page*/

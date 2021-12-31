@@ -15,4 +15,4 @@ const Metadata = () => {
 	)
 }
 
-export default Metadata
+export default React.memo(Metadata)
