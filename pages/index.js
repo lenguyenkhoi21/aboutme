@@ -125,9 +125,8 @@ export default function HomePage() {
 					.div-HomePage-left {
 						/*noinspection CssUnknownTarget*/
 						background: url('/bgid.png') no-repeat;
-						background-position: bottom right;
+						background-position: bottom;
 						background-size: cover;
-						width: 100%;
 						height: 720px;
 					}
 
