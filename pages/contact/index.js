@@ -20,9 +20,8 @@ const ContactPage = () => {
 			<div className={'background-color-page div-ContactPage-padding'}>
 				<div className={'div-ContactPage-container'}>
 					<div className={'align-page'}>
-						<div className={'row g-0'}>
+						<div className={'row g-0 div-ContactPage-maxw'}>
 							<div className={'col-md-6'}>
-								<div className={'div-ContactPage-maxw'}/>
 								<p className={'p-ContactPage-title'}>Contact</p>
 								<ul>
 									<li>
@@ -80,9 +79,10 @@ const ContactPage = () => {
 											<Link
 												href={'https://github.com/lenguyenkhoi21'}
 												passHref={true}>
-												<a className={'p-ContactPage-text div-ContactPage-link'}>
-                          https://github.com/lenguyenkhoi21
-                        </a>
+												<a
+													className={'p-ContactPage-text div-ContactPage-link'}>
+													https://github.com/lenguyenkhoi21
+												</a>
 											</Link>
 										</div>
 									</li>
@@ -151,12 +151,12 @@ const ContactPage = () => {
 					}
 
 					.div-ContactPage-maxw {
-						width: 1008px;
-						height: 1px;
+						max-width: 1680px;
+						width: 1680px;
 					}
-					
+
 					.div-ContactPage-link {
-					  text-decoration: none;
+						text-decoration: none;
 					}
 				`}
 			</style>
