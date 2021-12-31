@@ -33,42 +33,33 @@ const NavBar = () => {
 	return (
 		<>
 			<nav className={'nav-NavBar-bg'}>
-				<div className={'align-page'}>
-					<div className={'div-aws'}>
-						<div>
-							<div>
-								<div>
-									<Image
-										src={'/kln2.png'}
-										width={50}
-										height={50}
-										alt={'logo'}
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
+        {/*<div className={'align-page'}>*/}
+          <div className={'div-NavBar-logo'}>
+            <Image
+              src={'/kln2.png'}
+              width={50}
+              height={50}
+              alt={'logo'}
+            />
+          </div>
 
-					<div>
-						<ul className={'nav-NavBar-md'}>
-							{navBar.map((item, key) => (
-								<React.Fragment key={key}>
-									<NavBarItem item={item} updateNav={updateNav} />
-								</React.Fragment>
-							))}
-						</ul>
-					</div>
+
+          <ul className={'nav-NavBar-md'}>
+            {navBar.map((item, key) => (
+              <React.Fragment key={key}>
+                <NavBarItem item={item} updateNav={updateNav} />
+              </React.Fragment>
+            ))}
+          </ul>
 					<ul className={'nav-NavBar-sm'}>
 						<NavBarResponsive navBar={navBar} updateNav={updateNav} />
 					</ul>
-				</div>
+				{/*</div>*/}
 			</nav>
 
 			<style jsx>{`
-				.div-aws {
-					display: flex;
-					justify-content: left;
-					align-items: center;
+				.div-NavBar-logo {
+					margin-right: auto;
 				}
 
 				.nav-NavBar-md {
@@ -96,6 +87,8 @@ const NavBar = () => {
 					justify-content: center;
 					align-items: center;
 					z-index: 999;
+					padding-right: 120px;
+					padding-left: 120px;
 				}
 
 				@media only screen and (max-width: 767px) {
