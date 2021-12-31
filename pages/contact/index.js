@@ -17,86 +17,83 @@ const ContactPage = () => {
 
 	return (
 		<>
-			<div className={'background-color-page div-ContactPage-padding'}>
-				<div className={'div-ContactPage-container'}>
-					<div className={'align-page'}>
-						<div className={'row g-0 div-ContactPage-maxw'}>
-							<div className={'col-md-6'}>
-								<p className={'p-ContactPage-title'}>Contact</p>
-								<ul>
-									<li>
-										<div className={'div-ContactPage-center'}>
-											<div className={'div-ContactPage-address'}>
-												<Image
-													src={'/address.png'}
-													width={25}
-													height={25}
-													alt={'address'}
-												/>
-											</div>
-											<p className={'p-ContactPage-text'}> Da Nang City </p>
+			<div className={'background-color-page div-Contact-paddingPage'}>
+				<div className={'align-page'}>
+					<div className={'row g-0'}>
+						<div className={'col-md-6 div-Contact-paddingText'}>
+							<p className={'p-ContactPage-title'}>CONTACTINFO</p>
+							<ul>
+								<li>
+									<div className={'div-ContactPage-center'}>
+										<div className={'div-ContactPage-address'}>
+											<Image
+												src={'/address.png'}
+												width={25}
+												height={25}
+												alt={'address'}
+											/>
 										</div>
-									</li>
-									<li>
-										<div className={'div-ContactPage-center'}>
-											<div className={'div-ContactPage-address'}>
-												<Image
-													src={'/phone.png'}
-													width={25}
-													height={25}
-													alt={'address'}
-												/>
-											</div>
-											<p className={'p-ContactPage-text'}> +84 777701956 </p>
+										<p className={'p-ContactPage-text'}> Da Nang City </p>
+									</div>
+								</li>
+								<li>
+									<div className={'div-ContactPage-center'}>
+										<div className={'div-ContactPage-address'}>
+											<Image
+												src={'/phone.png'}
+												width={25}
+												height={25}
+												alt={'address'}
+											/>
 										</div>
-									</li>
-									<li>
-										<div className={'div-ContactPage-center'}>
-											<div className={'div-ContactPage-address'}>
-												<Image
-													src={'/email.png'}
-													width={25}
-													height={20}
-													alt={'email'}
-												/>
-											</div>
-											<p className={'p-ContactPage-text'}>
-												{' '}
-												lenguyenkhoi21@gmail.com{' '}
-											</p>
+										<p className={'p-ContactPage-text'}> +84 777701956 </p>
+									</div>
+								</li>
+								<li>
+									<div className={'div-ContactPage-center'}>
+										<div className={'div-ContactPage-address'}>
+											<Image
+												src={'/email.png'}
+												width={25}
+												height={20}
+												alt={'email'}
+											/>
 										</div>
-									</li>
-									<li>
-										<div className={'div-ContactPage-center'}>
-											<div className={'div-ContactPage-address'}>
-												<Image
-													src={'/website.png'}
-													width={25}
-													height={25}
-													alt={'email'}
-												/>
-											</div>
-											<Link
-												href={'https://github.com/lenguyenkhoi21'}
-												passHref={true}>
-												<a
-													className={'p-ContactPage-text div-ContactPage-link'}>
-													https://github.com/lenguyenkhoi21
-												</a>
-											</Link>
+										<p className={'p-ContactPage-text'}>
+											{' '}
+											lenguyenkhoi21@gmail.com{' '}
+										</p>
+									</div>
+								</li>
+								<li>
+									<div className={'div-ContactPage-center'}>
+										<div className={'div-ContactPage-address'}>
+											<Image
+												src={'/website.png'}
+												width={25}
+												height={25}
+												alt={'email'}
+											/>
 										</div>
-									</li>
-								</ul>
-							</div>
-							<div className={'col-md-6'}>
-								<div>
-									<Image
-										src={'/aboutme.png'}
-										width={524}
-										height={524}
-										alt={'Khoi Le Nguyen'}
-									/>
-								</div>
+										<Link
+											href={'https://github.com/lenguyenkhoi21'}
+											passHref={true}>
+											<a className={'p-ContactPage-text div-ContactPage-link'}>
+												https://github.com/lenguyenkhoi21
+											</a>
+										</Link>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div className={'col-md-6 div-Contact-image'}>
+							<div className={'div-ContactPage-right'}>
+								<Image
+									src={'/aboutme.png'}
+									width={524}
+									height={524}
+									alt={'Khoi Le Nguyen'}
+								/>
 							</div>
 						</div>
 					</div>
@@ -110,6 +107,7 @@ const ContactPage = () => {
 						font-weight: bold;
 						font-size: 48px;
 						line-height: 72px;
+						padding-bottom: 50px;
 					}
 
 					.p-ContactPage-text {
@@ -129,12 +127,11 @@ const ContactPage = () => {
 						line-height: 150%;
 					}
 
-					.div-ContactPage-padding {
-						padding-top: 200px;
-						padding-bottom: 150px;
+					.div-Contact-image {
+						padding-top: 100px;
 					}
 
-					.div-ContactPage-container {
+					.div-ContactPage-right {
 						display: flex;
 						justify-content: right;
 						align-items: center;
@@ -150,13 +147,16 @@ const ContactPage = () => {
 						margin-right: 25px;
 					}
 
-					.div-ContactPage-maxw {
-						max-width: 1680px;
-						width: 1680px;
-					}
-
 					.div-ContactPage-link {
 						text-decoration: none;
+					}
+
+					.div-Contact-paddingPage {
+						padding-bottom: 465px;
+					}
+
+					.div-Contact-paddingText {
+						padding-top: 200px;
 					}
 				`}
 			</style>
