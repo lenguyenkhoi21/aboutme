@@ -4,7 +4,7 @@ import Link from 'next/link'
 const ProjectContent = ({ project }) => {
 	return (
 		<>
-			<div className='col-md-6 div-ProjectContent-maxw'>
+			<div className={'col-md-6 div-ProjectContent-maxw'}>
 				<div>
 					<p className={'p-ProjectContent-title div-ProjectContent-container'}>
 						{' '}

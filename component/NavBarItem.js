@@ -9,13 +9,11 @@ const NavBarItem = ({ item, updateNav }) => {
 			<li className={'li-NavBarItem-container'}>
 				<Link href={item.path}>
 					{item.path === titleCTX.state.path ? (
-						<a
-							className='a-NavBar-text a-NavBar-active'
-							onClick={e => updateNav(e, item.pos)}>
+						<a className={'a-NavBar-text a-NavBar-active'} onClick={updateNav}>
 							{item.content}
 						</a>
 					) : (
-						<a className='a-NavBar-text' onClick={e => updateNav(e, item.pos)}>
+						<a className={'a-NavBar-text'} onClick={updateNav}>
 							{item.content}
 						</a>
 					)}

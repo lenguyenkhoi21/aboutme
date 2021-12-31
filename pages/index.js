@@ -1,6 +1,7 @@
 import { TITLE_ACTION, TitleContext } from '../reducer/Title.Reducer'
-import { useContext, useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import TweenImage from '../component/index/TweenImage'
+import ProjectDetail from '../component/index/ProjectDetail'
 
 export default function HomePage() {
 	const titleCTX = useContext(TitleContext)
@@ -70,6 +71,16 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div>
+			<div className={'background-color-page div-ProjectPage-padding'}>
+				<div className={'div-ProjectPage-container'}>
+					<div className={'div-ProjectPage-title'}>
+						<p className={'p-ProjectPage-title'}> Individual Projects </p>
+					</div>
+				</div>
+				<div className={'align-page'}>
+					<ProjectDetail />
+				</div>
+			</div>
 			<style jsx>
 				{`
 					.div-HomePage-container {
@@ -118,6 +129,28 @@ export default function HomePage() {
 						background-size: cover;
 						width: 100%;
 						height: 720px;
+					}
+
+					.div-ProjectPage-title {
+						margin-bottom: 80px;
+					}
+
+					.div-ProjectPage-padding {
+						padding-top: 136px;
+					}
+
+					.p-ProjectPage-title {
+						font-weight: bold;
+						font-size: 48px;
+						line-height: 72px;
+						text-decoration: underline;
+						text-decoration-color: #fdc435;
+					}
+
+					.div-ProjectPage-container {
+						display: flex;
+						justify-content: center;
+						align-items: center;
 					}
 
 					@media only screen and (max-width: 767px) {

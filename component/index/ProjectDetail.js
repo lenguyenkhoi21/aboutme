@@ -32,6 +32,9 @@ const ProjectDetail = () => {
 						},
 						{
 							name: 'ExpressJS'
+						},
+						{
+							name: 'Socket.IO'
 						}
 					]
 				},

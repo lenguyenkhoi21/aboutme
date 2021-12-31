@@ -5,14 +5,10 @@ import NavBarItem from './NavBarItem'
 import NavBarResponsive from './NavBarResponsive'
 
 const NavBar = () => {
-	const [navBar, setNavBar] = useState([
+	const init = [
 		{
 			content: 'Home',
 			path: '/'
-		},
-		{
-			content: 'Projects',
-			path: '/projects'
 		},
 		{
 			content: 'About Me',
@@ -22,13 +18,11 @@ const NavBar = () => {
 			content: 'Contact',
 			path: '/contact'
 		}
-	])
+	]
 
-	const updateNav = (e, pos) => {
-		const list = navBar
-		list.map(item => (item.status = item.pos === pos))
-		setNavBar(list)
-	}
+	const [navBar, setNavBar] = useState(init)
+
+	const updateNav = () => setNavBar(init)
 
 	return (
 		<>

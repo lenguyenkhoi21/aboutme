@@ -4,9 +4,9 @@ import Image from 'next/image'
 const ProjectImage = ({ project }) => {
 	return (
 		<>
-			<div className='col-md-6 div-ProjectContent-maxw'>
+			<div className={'col-md-6 div-ProjectContent-maxw'}>
 				<div>
-					<div className='div-ProjectImage-right'>
+					<div className={'div-ProjectImage-right'}>
 						<Image
 							src={`${project.image}`}
 							width={500}

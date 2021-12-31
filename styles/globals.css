@@ -90,6 +90,7 @@ table {
 .background-color-page {
   background-color: #E5E5E5;
   width: 100vw;
+  max-width: 100vw;
   min-height: calc(100vh - 400px);
 }
 
