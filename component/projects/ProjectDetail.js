@@ -230,28 +230,43 @@ const ProjectDetail = () => {
 				if (index % 2 === 0) {
 					return (
 						<React.Fragment key={index}>
-							<div className={'row g-0 div-ProjectDetail-container'}>
-								<ProjectContent project={project} />
-								<ProjectImage project={project} />
+							<div className={'div-ProjectDetail-center'}>
+								<div className={'row g-0 div-ProjectDetail-container'}>
+									<ProjectContent project={project} />
+									<ProjectImage project={project} />
+								</div>
 							</div>
 						</React.Fragment>
 					)
 				} else {
 					return (
 						<React.Fragment key={index}>
-							<div className={'row g-0 div-ProjectDetail-container'}>
-								<ProjectImage project={project} />
-								<ProjectContent project={project} />
+							<div className={'div-ProjectDetail-center'}>
+								<div className={'row g-0 div-ProjectDetail-container'}>
+									<ProjectImage project={project} />
+									<ProjectContent project={project} />
+								</div>
 							</div>
 						</React.Fragment>
 					)
 				}
 			})}
 			<style jsx>{`
-				.div-ProjectDetail-container {
+				.div-ProjectDetail-center {
 					display: flex;
 					justify-content: center;
 					align-items: center;
+				}
+
+				.div-ProjectDetail-container {
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #ffffff;
+					filter: drop-shadow(0px 6px 64px rgba(112, 144, 176, 0.1));
+					border-radius: 24px;
+					padding: 15px 50px;
+					margin-bottom: 80px;
 				}
 			`}</style>
 		</>
