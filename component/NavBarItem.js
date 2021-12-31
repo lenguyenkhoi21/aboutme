@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Link from 'next/link'
+import { TitleContext } from '../reducer/Title.Reducer'
 
 const NavBarItem = ({ item, updateNav }) => {
+	const titleCTX = useContext(TitleContext)
 	return (
 		<>
 			<li className={'li-NavBarItem-container'}>
 				<Link href={item.path}>
-					{item.status === true ? (
+					{item.path === titleCTX.state.path ? (
 						<a
 							className='a-NavBar-text a-NavBar-active'
 							onClick={e => updateNav(e, item.pos)}>

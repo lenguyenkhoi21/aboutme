@@ -5,7 +5,7 @@ import ProjectImage from './ProjectImage'
 const ProjectDetail = () => {
 	const projects = [
 		{
-			title: 'Zuzul E-Commercial',
+			title: 'Zuzul E-Commercial System',
 			technology: [
 				{
 					type: 'Front-end',
@@ -82,7 +82,7 @@ const ProjectDetail = () => {
 							name: 'Keycloak'
 						},
 						{
-							name: 'Kafka'
+							name: 'Apache Kafka'
 						},
 						{
 							name: 'ELK Stack'

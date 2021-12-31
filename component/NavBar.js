@@ -7,26 +7,18 @@ const NavBar = () => {
 	const [navBar, setNavBar] = useState([
 		{
 			content: 'Home',
-			status: true,
-			pos: 0,
 			path: '/'
 		},
 		{
 			content: 'Projects',
-			status: false,
-			pos: 1,
 			path: '/projects'
 		},
 		{
 			content: 'About Me',
-			status: false,
-			pos: 2,
 			path: '/aboutme'
 		},
 		{
 			content: 'Contact',
-			status: false,
-			pos: 3,
 			path: '/contact'
 		}
 	])

@@ -45,6 +45,7 @@ export default function HomePage() {
 										{' '}
 										I{`'`}m interesting in{' '}
 										<span className={'span-HomePage-color'}>Cloud</span>,{' '}
+										<span className={'span-HomePage-color'}>Devops</span>,{' '}
 										<span className={'span-HomePage-color'}>Go</span> and
 									</p>
 									<p className={'p-HomePage-favourite'}>

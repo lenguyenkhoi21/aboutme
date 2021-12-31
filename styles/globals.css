@@ -71,6 +71,12 @@ table {
   src: url("/font/Nutito/Nunito-Bold.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: Roboto-Bold;
+  /*noinspection CssUnknownTarget*/
+  src: url("/font/Roboto/Roboto-Bold.ttf") format('truetype');
+}
+
 /*Align page*/
 .align-page-left {
   margin-left: 120px;
