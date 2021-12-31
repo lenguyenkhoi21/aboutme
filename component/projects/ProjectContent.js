@@ -4,9 +4,12 @@ import Link from 'next/link'
 const ProjectContent = ({ project }) => {
 	return (
 		<>
-			<div className='col-md-6'>
+			<div className='col-md-6 div-ProjectContent-maxw'>
 				<div>
-					<p className={'p-ProjectContent-title'}> {project.title} </p>
+					<p className={'p-ProjectContent-title div-ProjectContent-container'}>
+						{' '}
+						{project.title}{' '}
+					</p>
 					{project.technology.map((tech, index1) => (
 						<React.Fragment key={index1}>
 							<p className={'p-ProjectContent-tech'}>
@@ -59,6 +62,11 @@ const ProjectContent = ({ project }) => {
 			</div>
 			<style jsx>
 				{`
+					.div-ProjectContent-maxw {
+						width: 500px;
+						max-width: 500px;
+					}
+
 					.div-ProjectContent-spacing {
 						margin-top: 24px;
 					}

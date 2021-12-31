@@ -4,7 +4,7 @@ import Image from 'next/image'
 const ProjectImage = ({ project }) => {
 	return (
 		<>
-			<div className='col-md-6'>
+			<div className='col-md-6 div-ProjectContent-maxw'>
 				<div>
 					<div className='div-ProjectImage-right'>
 						<Image
@@ -18,6 +18,11 @@ const ProjectImage = ({ project }) => {
 			</div>
 			<style jsx>
 				{`
+					.div-ProjectContent-maxw {
+						width: 500px;
+						max-width: 500px;
+					}
+
 					.p-ProjectImage-techDetails {
 						font-family: Nunito;
 						font-weight: bold;

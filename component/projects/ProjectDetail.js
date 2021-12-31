@@ -230,20 +230,30 @@ const ProjectDetail = () => {
 				if (index % 2 === 0) {
 					return (
 						<React.Fragment key={index}>
-							<ProjectContent project={project} />
-							<ProjectImage project={project} />
+							<div className={'row g-0 div-ProjectDetail-container'}>
+								<ProjectContent project={project} />
+								<ProjectImage project={project} />
+							</div>
 						</React.Fragment>
 					)
 				} else {
 					return (
 						<React.Fragment key={index}>
-							<ProjectImage project={project} />
-							<ProjectContent project={project} />
+							<div className={'row g-0 div-ProjectDetail-container'}>
+								<ProjectImage project={project} />
+								<ProjectContent project={project} />
+							</div>
 						</React.Fragment>
 					)
 				}
 			})}
-			<style jsx>{``}</style>
+			<style jsx>{`
+				.div-ProjectDetail-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			`}</style>
 		</>
 	)
 }

@@ -22,7 +22,7 @@ const ProjectPage = () => {
 						<p className={'p-Projects-title'}> Projects </p>
 					</div>
 				</div>
-				<div className={'row g-0 align-page div-Projects-container'}>
+				<div className={'align-page'}>
 					<ProjectDetail />
 				</div>
 			</div>
