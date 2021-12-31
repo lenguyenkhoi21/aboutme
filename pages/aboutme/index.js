@@ -197,10 +197,7 @@ const AboutMePage = () => {
 
 					.div-AboutMePage-padding {
 						padding-top: 200px;
-					}
-
-					.div-AboutMePage-margin {
-						margin-bottom: 100px;
+						padding-bottom: 150px;
 					}
 
 					.div-AboutMePage-container {
