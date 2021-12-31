@@ -50,4 +50,4 @@ const NavBarItem = ({ item, updateNav }) => {
 	)
 }
 
-export default React.memo(NavBarItem)
+export default NavBarItem

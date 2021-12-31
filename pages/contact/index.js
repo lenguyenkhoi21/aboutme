@@ -10,10 +10,20 @@ const ContactPage = () => {
 	}, [])
 	return (
 		<>
-			<div className={'background-color-page'}>
-				<div className={'align-page'}></div>
-			</div>
-			<style jsx>{``}</style>
+			<>
+				<div className={'background-color-page'}>
+					<div className={'align-page div-HomePage-container'}></div>
+				</div>
+				<style jsx>
+					{`
+						.div-HomePage-container {
+							display: flex;
+							justify-content: right;
+							align-items: center;
+						}
+					`}
+				</style>
+			</>
 		</>
 	)
 }

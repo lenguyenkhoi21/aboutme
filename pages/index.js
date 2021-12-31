@@ -13,15 +13,15 @@ export default function HomePage() {
 	return (
 		<>
 			<div className={'background-color-page'}>
-				<div className={'row g-0 align-page-left'}>
-					<div className={'col-md-6 div-HomePage-Right'}>
+				<div className={'row g-0 align-page-left div-HomePage-container'}>
+					<div className={'col-md-6'}>
 						<div>
-							<div className={'div-HomePage-intro'}>
+							<div>
 								<p className={'p-HomePage-intro'}> Hi, I{`'`}m Khoi. </p>
 								<p className={'p-HomePage-intro'}> A Back-end Developer ! </p>
 							</div>
 							<div>
-								<div className={'div-HomePage-intro'}>
+								<div>
 									<p className={'p-HomePage-favourite'}>
 										{' '}
 										My favourite technology are
@@ -58,12 +58,12 @@ export default function HomePage() {
 					</div>
 					<div className={'col-md-6'}>
 						<div className={'div-HomePage-left'}>
-							<div className='row g-0'>
-								<div className='col-md-6' />
+							<div className='row g-0 div-HomePage-LeftContent'>
+								<div className='col-md-5' />
 								<div className='col-md-5 div-HomePage-imgTop'>
 									<TweenImage />
 								</div>
-								<div className='col-md-1' />
+								<div className='col-md-2' />
 							</div>
 						</div>
 					</div>
@@ -71,8 +71,10 @@ export default function HomePage() {
 			</div>
 			<style jsx>
 				{`
-					.div-HomePage-intro {
-						margin-bottom: 32px;
+					.div-HomePage-container {
+						display: flex;
+						justify-content: right;
+						align-items: center;
 					}
 
 					.span-HomePage-color {
@@ -97,13 +99,15 @@ export default function HomePage() {
 						line-height: 150%;
 					}
 
-					.div-HomePage-Right {
-						margin-top: 55px;
-						padding-top: 100px;
+					.div-HomePage-imgTop {
+						display: flex;
+						justify-content: center;
+						align-items: center;
 					}
 
-					.div-HomePage-imgTop {
-						margin-top: 60px;
+					.div-HomePage-LeftContent {
+						height: inherit;
+						padding-bottom: 100px;
 					}
 
 					.div-HomePage-left {

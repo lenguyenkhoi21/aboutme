@@ -11,19 +11,20 @@ const AboutMePage = () => {
 
 	return (
 		<>
-			<div className={'background-color-page'}>
-				<div className={'align-page'}>
-					<div className={'abc'}></div>
+			<>
+				<div className={'background-color-page'}>
+					<div className={'align-page div-HomePage-container'}></div>
 				</div>
-			</div>
-			<style jsx>
-				{`
-					.abc {
-						height: calc(100vh + 300px);
-						background: black;
-					}
-				`}
-			</style>
+				<style jsx>
+					{`
+						.div-HomePage-container {
+							display: flex;
+							justify-content: right;
+							align-items: center;
+						}
+					`}
+				</style>
+			</>
 		</>
 	)
 }
