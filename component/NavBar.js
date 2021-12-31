@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import NavBarItem from './NavBarItem'
 import NavBarResponsive from './NavBarResponsive'
+import ScrollToTop from './ScrollToTop'
 
 const NavBar = () => {
 	const init = [
@@ -28,7 +29,7 @@ const NavBar = () => {
 		<>
 			<nav className={'nav-NavBar-bg'}>
 				<div className={'div-NavBar-logo'}>
-					<Image src={'/logo.png'} width={50} height={50} alt={'logo'} />
+					<ScrollToTop />
 				</div>
 
 				<ul className={'nav-NavBar-md'}>
