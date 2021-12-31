@@ -19,14 +19,9 @@ const ContactPage = () => {
 			<div className={'background-color-page div-ContactPage-padding'}>
 				<div className={'div-ContactPage-container'}>
 					<div className={'align-page'}>
-						<div className={'row g-0'}></div>
-						<div>
-							<Image
-								src={'/aboutme.png'}
-								width={524}
-								height={524}
-								alt={'Khoi Le Nguyen'}
-							/>
+						<div className={'row g-0'}>
+							<div className={'col-md-6'}>afsd</div>
+							<div className={'col-md-6'}>afsd</div>
 						</div>
 					</div>
 				</div>
