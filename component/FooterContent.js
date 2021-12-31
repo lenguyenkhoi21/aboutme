@@ -21,11 +21,12 @@ const FooterContent = () => {
 	return (
 		<>
 			<div>
-				<div className={'div-Footer-iconBarFlex div-Footer-bottom'}>
-					<div className={'div-Footer-flex'}>
+				<div
+					className={'div-FooterContent-iconBarFlex div-FooterContent-bottom'}>
+					<div className={'div-FooterContent-flex'}>
 						{images.map((value, index) => (
 							<React.Fragment key={index}>
-								<div className={'div-Footer-space'}>
+								<div className={'div-FooterContent-space'}>
 									<Link href={`${value.link}`} passHref={true}>
 										<a>
 											<Image
@@ -42,10 +43,10 @@ const FooterContent = () => {
 					</div>
 				</div>
 
-				<div className={'div-Footer-bottom'}>
-					<div className={'div-Footer-flex'}>
+				<div className={'div-FooterContent-bottom'}>
+					<div className={'div-FooterContent-flex'}>
 						<div>
-							<p className={'p-Footer-copyright'}>
+							<p className={'p-FooterContent-copyright'}>
 								{' '}
 								2022 @ Copyright By Le Nguyen Khoi{' '}
 							</p>
@@ -54,9 +55,9 @@ const FooterContent = () => {
 				</div>
 
 				<div>
-					<div className={'div-Footer-flex'}>
+					<div className={'div-FooterContent-flex'}>
 						<div>
-							<p className={'p-Footer-copyright'}>
+							<p className={'p-FooterContent-copyright'}>
 								Especially thanks{' '}
 								<Link
 									href={'https://www.facebook.com/fphamhieu'}
@@ -77,14 +78,16 @@ const FooterContent = () => {
 					</div>
 				</div>
 
-				<div className={'div-Footer-bottom'}>
-					<div className={'div-Footer-flex'}>
+				<div className={'div-FooterContent-bottom'}>
+					<div className={'div-FooterContent-flex'}>
 						<div>
 							<Link
 								href={'https://github.com/lenguyenkhoi21/aboutme'}
 								passHref={true}>
 								<a>
-									<p className={'p-Footer-copyright'}>Fork me on Github</p>
+									<p className={'p-FooterContent-copyright'}>
+										Fork me on Github
+									</p>
 								</a>
 							</Link>
 						</div>
@@ -93,20 +96,20 @@ const FooterContent = () => {
 			</div>
 			<style jsx>
 				{`
-					.div-Footer-bottom {
+					.div-FooterContent-bottom {
 						margin-bottom: 16px;
 					}
 
-					.div-Footer-space {
+					.div-FooterContent-space {
 						margin-left: 24px;
 					}
 
-					.p-Footer-copyright {
+					.p-FooterContent-copyright {
 						font-family: Nunito;
 						font-size: 16px;
 					}
 
-					.div-Footer-flex {
+					.div-FooterContent-flex {
 						display: flex;
 						justify-content: center;
 						align-items: center;

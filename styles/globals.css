@@ -78,7 +78,7 @@ table {
 .background-color-page {
   background-color: #E5E5E5;
   width: 100vw;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 400px);
 }
 
 @media only screen and (max-width: 767px) {

@@ -99,6 +99,7 @@ export default function HomePage() {
 
 					.div-HomePage-Right {
 						margin-top: 55px;
+						padding-top: 100px;
 					}
 
 					.div-HomePage-imgTop {

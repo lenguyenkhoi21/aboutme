@@ -71,11 +71,12 @@ const NavBar = () => {
 				.nav-NavBar-bg {
 					background: #fdc435;
 					height: 56px;
-					position: sticky;
+					position: fixed;
 					width: 100vw;
 					display: flex;
 					justify-content: right;
 					align-items: center;
+					z-index: 999;
 				}
 
 				@media only screen and (max-width: 767px) {
@@ -92,4 +93,4 @@ const NavBar = () => {
 	)
 }
 
-export default React.memo(NavBar)
+export default NavBar

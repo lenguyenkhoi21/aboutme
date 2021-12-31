@@ -13,7 +13,7 @@ const Footer = () => {
 						<FooterContent />
 					</div>
 				) : (
-					<div className={'div-Footer-flex div-Footer-bg'}>
+					<div className={'div-Footer-flex div-Footer-bgother'}>
 						<FooterContent />
 					</div>
 				)}
@@ -26,10 +26,17 @@ const Footer = () => {
 						width: 100vw;
 					}
 
+					.div-Footer-bgother {
+						background-color: #e5e5e5;
+						width: 100vw;
+					}
+
 					.div-Footer-flex {
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						height: 344px;
+						max-height: 344px;
 					}
 				`}
 			</style>
