@@ -62,7 +62,9 @@ const FooterContent = () => {
 								<Link
 									href={'https://www.facebook.com/fphamhieu'}
 									passHref={true}>
-									<a>Hieu Pham</a>
+									<a className={'a-FooterContent-link a-FooterContent-thanks'}>
+										Hieu Pham
+									</a>
 								</Link>{' '}
 								and{' '}
 								<Link
@@ -70,7 +72,9 @@ const FooterContent = () => {
 										'https://www.facebook.com/profile.php?id=100008383681382'
 									}
 									passHref={true}>
-									<a>Hang Phan</a>
+									<a className={'a-FooterContent-link a-FooterContent-thanks'}>
+										Hang Phan
+									</a>
 								</Link>{' '}
 								for designning UI, UX
 							</p>
@@ -84,8 +88,8 @@ const FooterContent = () => {
 							<Link
 								href={'https://github.com/lenguyenkhoi21/aboutme'}
 								passHref={true}>
-								<a>
-									<p className={'p-FooterContent-copyright'}>
+								<a className={'a-FooterContent-link'}>
+									<p className={'p-FooterContent-copyright a-Footer-github'}>
 										Fork me on Github
 									</p>
 								</a>
@@ -96,6 +100,14 @@ const FooterContent = () => {
 			</div>
 			<style jsx>
 				{`
+					.a-FooterContent-thanks {
+						color: #fdc435;
+					}
+
+					.a-FooterContent-link {
+						text-decoration: none;
+					}
+
 					.div-FooterContent-bottom {
 						margin-bottom: 16px;
 					}
@@ -107,6 +119,7 @@ const FooterContent = () => {
 					.p-FooterContent-copyright {
 						font-family: Nunito;
 						font-size: 16px;
+						color: #828282;
 					}
 
 					.div-FooterContent-flex {

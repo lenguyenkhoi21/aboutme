@@ -17,7 +17,7 @@ const ProjectPage = () => {
 	return (
 		<>
 			<div className={'background-color-page div-ProjectPage-padding'}>
-				<div className={'div-ProjectPage-container div-ProjectPage-margin'}>
+				<div className={'div-ProjectPage-container'}>
 					<div>
 						<p className={'p-ProjectPage-title'}> Projects </p>
 					</div>
@@ -32,9 +32,6 @@ const ProjectPage = () => {
 						padding-top: 200px;
 					}
 
-					.div-ProjectPage-margin {
-						margin-bottom: 100px;
-					}
 					.p-ProjectPage-title {
 						font-weight: bold;
 						font-size: 48px;
