@@ -16,10 +16,10 @@ const ProjectPage = () => {
 
 	return (
 		<>
-			<div className={'background-color-page div-Projects-padding'}>
-				<div className={'div-Projects-container div-Projects-margin'}>
+			<div className={'background-color-page div-ProjectPage-padding'}>
+				<div className={'div-ProjectPage-container div-ProjectPage-margin'}>
 					<div>
-						<p className={'p-Projects-title'}> Projects </p>
+						<p className={'p-ProjectPage-title'}> Projects </p>
 					</div>
 				</div>
 				<div className={'align-page'}>
@@ -28,14 +28,14 @@ const ProjectPage = () => {
 			</div>
 			<style jsx>
 				{`
-					.div-Projects-padding {
+					.div-ProjectPage-padding {
 						padding-top: 200px;
 					}
 
-					.div-Projects-margin {
+					.div-ProjectPage-margin {
 						margin-bottom: 100px;
 					}
-					.p-Projects-title {
+					.p-ProjectPage-title {
 						font-weight: bold;
 						font-size: 48px;
 						line-height: 72px;
@@ -43,7 +43,7 @@ const ProjectPage = () => {
 						text-decoration-color: #fdc435;
 					}
 
-					.div-Projects-container {
+					.div-ProjectPage-container {
 						display: flex;
 						justify-content: center;
 						align-items: center;

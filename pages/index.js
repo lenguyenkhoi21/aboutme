@@ -24,7 +24,7 @@ export default function HomePage() {
 								<div>
 									<p className={'p-HomePage-favourite'}>
 										{' '}
-										My favourite technology are
+										My favourite framework/language are
 										<span className={'span-HomePage-color'}>
 											{' '}
 											Spring Boot

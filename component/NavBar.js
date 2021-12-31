@@ -33,28 +33,20 @@ const NavBar = () => {
 	return (
 		<>
 			<nav className={'nav-NavBar-bg'}>
-        {/*<div className={'align-page'}>*/}
-          <div className={'div-NavBar-logo'}>
-            <Image
-              src={'/kln2.png'}
-              width={50}
-              height={50}
-              alt={'logo'}
-            />
-          </div>
+				<div className={'div-NavBar-logo'}>
+					<Image src={'/logo.png'} width={50} height={50} alt={'logo'} />
+				</div>
 
-
-          <ul className={'nav-NavBar-md'}>
-            {navBar.map((item, key) => (
-              <React.Fragment key={key}>
-                <NavBarItem item={item} updateNav={updateNav} />
-              </React.Fragment>
-            ))}
-          </ul>
-					<ul className={'nav-NavBar-sm'}>
-						<NavBarResponsive navBar={navBar} updateNav={updateNav} />
-					</ul>
-				{/*</div>*/}
+				<ul className={'nav-NavBar-md'}>
+					{navBar.map((item, key) => (
+						<React.Fragment key={key}>
+							<NavBarItem item={item} updateNav={updateNav} />
+						</React.Fragment>
+					))}
+				</ul>
+				<ul className={'nav-NavBar-sm'}>
+					<NavBarResponsive navBar={navBar} updateNav={updateNav} />
+				</ul>
 			</nav>
 
 			<style jsx>{`
