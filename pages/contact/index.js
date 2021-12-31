@@ -21,7 +21,7 @@ const ContactPage = () => {
 				<div className={'align-page'}>
 					<div className={'row g-0'}>
 						<div className={'col-md-6 div-Contact-paddingText'}>
-							<p className={'p-ContactPage-title'}>CONTACTINFO</p>
+							<p className={'p-ContactPage-title'}>CONTACT</p>
 							<ul>
 								<li>
 									<div className={'div-ContactPage-center'}>
