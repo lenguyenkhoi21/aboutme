@@ -27,14 +27,14 @@ const Footer = () => {
 					}
 
 					.div-Footer-bgother {
+						/*noinspection CssUnknownTarget*/
+						background: url('/footer.png') no-repeat;
 						background-color: #e5e5e5;
+						background-size: cover;
 						width: 100vw;
 					}
 
 					.div-Footer-flex {
-						display: flex;
-						justify-content: center;
-						align-items: center;
 						height: 344px;
 						max-height: 344px;
 					}

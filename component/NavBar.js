@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 import NavBarItem from './NavBarItem'
 import NavBarResponsive from './NavBarResponsive'
@@ -33,23 +34,41 @@ const NavBar = () => {
 		<>
 			<nav className={'nav-NavBar-bg'}>
 				<div className={'align-page'}>
-					<ul className={'nav-NavBar-md'}>
-						{navBar.map((item, key) => (
-							<React.Fragment key={key}>
-								<NavBarItem item={item} updateNav={updateNav} />
-							</React.Fragment>
-						))}
-					</ul>
+					<div className={'div-aws'}>
+						<div>
+							<div>
+								<div>
+									<Image
+										src={'/kln2.png'}
+										width={50}
+										height={50}
+										alt={'logo'}
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<ul className={'nav-NavBar-md'}>
+							{navBar.map((item, key) => (
+								<React.Fragment key={key}>
+									<NavBarItem item={item} updateNav={updateNav} />
+								</React.Fragment>
+							))}
+						</ul>
+					</div>
 					<ul className={'nav-NavBar-sm'}>
 						<NavBarResponsive navBar={navBar} updateNav={updateNav} />
 					</ul>
 				</div>
-				<div className={'div-NavBar-clear'} />
 			</nav>
 
 			<style jsx>{`
-				.div-NavBar-clear {
-					clear: both;
+				.div-aws {
+					display: flex;
+					justify-content: left;
+					align-items: center;
 				}
 
 				.nav-NavBar-md {
@@ -60,13 +79,21 @@ const NavBar = () => {
 					display: none;
 				}
 
+				.nav-NavBar-logo {
+					position: fixed;
+					display: flex;
+					justify-content: left;
+					align-items: center;
+					z-index: 999;
+				}
+
 				.nav-NavBar-bg {
 					background: #fdc435;
 					height: 56px;
 					position: fixed;
 					width: 100vw;
 					display: flex;
-					justify-content: right;
+					justify-content: center;
 					align-items: center;
 					z-index: 999;
 				}

@@ -9,7 +9,7 @@ const Metadata = () => {
 			<Head>
 				<title>{TitleCTX.state.name}</title>
 				<meta name='Le Nguyen Khoi' content='This is my profile' />
-				<link rel='shortcut icon' href='/logo.ico' />
+				<link rel='shortcut icon' href='/kln.ico' />
 			</Head>
 		</>
 	)
